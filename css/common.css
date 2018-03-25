@@ -1,0 +1,981 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, small, b, u, i, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+}
+
+html { height: 101%; }
+body { font-size: 12px; line-height: 1; background:#fff; font-family:'Open sans',sans-serif; }
+
+ol, ul { list-style: none; }
+
+input { outline: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+a { text-decoration: none;color:inherit;}
+a:hover { text-decoration: none; }
+
+
+#page h1 {
+	font-size:4.5em;
+	font-family:'Dosis', sans-serif;
+	font-weight:300;
+	line-height:1.175em;	
+}
+
+#page h2 {
+	font-size:4.5em;
+	font-family:'Dosis', sans-serif;
+	font-weight:300;
+	line-height:1.175em;	
+}
+
+#page {
+	width:100%;
+}
+
+#page #wrapper {
+	width:100%;
+	position:relative;
+}
+
+body:not(.inside) #page #wrapper #header {
+	position:relative;
+	background:url(../img/bg.jpg) repeat-x #fff;
+	text-align:center;
+}
+
+body.inside #page #wrapper #header {
+	padding:10px 0;
+	background:#171a24;
+}	
+
+body.inside #page #wrapper #header .logo {
+	display:block;
+	width:143px;
+	height:49px;
+	background:url(../img/logo2.png) no-repeat center center;
+}
+
+body.inside #page #wrapper #header p {
+	display:inline-block;
+	vertical-align:middle;
+	font-size:1.8em;
+	line-height:2em;
+	font-family:'Dosis', sans-serif;
+}
+
+body.inside #page #wrapper #header p + a {
+	display:inline-block;
+	vertical-align:top;
+	line-height:4.1em;
+	color: #a8533f;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+}
+
+body.inside #page #wrapper #header p + a{
+	margin-left:100px;
+}
+
+body.inside #page #wrapper #header p + a:hover {
+	color:#c3654f;	
+}
+
+
+.container {
+	position:relative;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 	
+	width:1170px;
+	padding:0 15px;
+	margin:0 auto;
+}
+.container:before, .container:after {
+	display: table;
+	content: " ";
+}
+
+.container:after {
+	clear: both;
+}
+
+.pull-left {
+	float:left;
+}
+.pull-right {
+	float:right;
+}
+
+.forum-ico,
+.tech-ico,
+.standard-ico,
+.news-ico,
+.coins-ico {
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:10px;
+	width:23px;
+	height:23px;
+	
+}
+
+/*
+.forum-ico {
+	background:url(../img/forum_icon.png) no-repeat center center;
+}
+
+.tech-ico {
+	background:url(../img/tech_icon.png) no-repeat center center;
+}
+
+.active .tech-ico {
+	background:url(../img/tech_icon-active.png) no-repeat center center;
+}
+
+.coins-ico {
+	background:url(../img/coins-icon.png) no-repeat center center;
+}
+.active .coins-ico  {
+	background:url(../img/coins-icon-active.png) no-repeat center center;
+}
+.news-ico {
+	background:url(../img/news-icon.png) no-repeat center center;
+}
+
+.active .news-ico  {
+	background:url(../img/news-icon-active.png) no-repeat center center;
+}
+
+.standard-ico {
+	background:url(../img/news-icon.png) no-repeat center center;
+}
+
+.active .standard-ico  {
+	background:url(../img/news-icon-active.png) no-repeat center center;
+}
+*/
+
+.clearfix:after,
+.clearfix:before {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+body:not(.inside) #page #wrapper #header:before {
+	content:'';
+	position:absolute;
+	top:0;
+	opacity:0.3;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(../img/scheme.png) no-repeat center center;
+}
+
+#page #wrapper #header .nav {
+	color:#a8533f;
+	font-size:1em;
+	padding-top:15px;
+}
+
+#page #wrapper #header .nav  li {
+	display:block;
+	float:left;
+}	
+
+#page #wrapper #header .nav  li#forum,
+#page #wrapper #header .nav  li#tech,
+#page #wrapper #header .nav li#news,
+#page #wrapper #header .nav  li#coins,
+#page #wrapper #header .nav  li#standard
+ {
+	float:right;
+}
+
+#page #wrapper #header .nav  li + li {
+	margin-left:5%;
+}
+
+#page #wrapper #header .nav  li  > a {
+	display:block;
+	text-transform:uppercase;
+	font-weight:700;
+	letter-spacing:0.2em;
+}
+
+#page #wrapper #header .nav  li  > a:hover, 
+#page #wrapper #header .nav  li  > a.active,
+#page #wrapper #header .nav  li.active > a{
+	color:#ff4f26;	
+}
+
+body:not(.inside) #page #wrapper #header .logo {
+	width:10em;
+	height:10.5em;
+	margin:7em auto;
+	background:url(../img/logo.png) no-repeat center center;
+	background-size:contain;
+}
+
+#page #wrapper #header h1 {
+	color:#fff;
+}
+
+#page #wrapper #header h1 + p {
+	margin-top:4.5em;
+}
+
+#page #wrapper #header p {
+	font-size:1.3em;
+	text-align:center;
+	font-weight:300;
+	color:#fff;
+	line-height:1.7em;
+}
+
+#page #wrapper #header p + p {
+	margin-top:1.35%;
+}
+
+#page #wrapper #header p + .btn {
+	margin-top:3%;
+	margin-bottom:5%;
+	display:inline-block;
+	padding:0.15em 0.5em;
+	border:0.12em solid #ff5614;
+	-webkit-border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+	font-size:1em;
+	line-height:2em;
+	letter-spacing:0.2em;
+	color:#ff5614;
+	font-weight:800;
+	text-transform:uppercase;
+}
+
+#page #wrapper #header p + .btn:hover {
+	color:#a8533f;
+	border:0.12em solid #6f3a30;
+	border:0.12em solid rgba(254,117,85,0.6);	
+}
+
+#page #wrapper #cryptonote-tf {
+	padding:3.33em 0;
+}
+#page #wrapper #cryptonote-tf  h2{
+	color:#484848;
+	text-align:center;
+	font-size:4.5em;
+}
+
+#page #wrapper #cryptonote-tf table {
+	margin-top:8.5%;
+}
+
+#page #wrapper #cryptonote-tf table td {
+	width:33.3%;
+	position:relative;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+	padding:0 1.66em;
+}
+
+#page #wrapper #cryptonote-tf table tr:not(:last-of-type) td {
+	padding-top:1.8em;;
+	padding-bottom:5em;
+	border-bottom:1px solid #ddeaf2;
+}
+
+#page #wrapper #cryptonote-tf table tr:last-of-type td {
+	padding-top:3em;
+}
+
+#page #wrapper #cryptonote-tf table tr td + td {
+	border-left:1px solid #ddeaf2;
+}
+
+#page #wrapper #cryptonote-tf table td a {
+	display:block;
+}
+
+#page #wrapper #cryptonote-tf table td a:hover h4 {
+	color:#ff5614;
+}
+
+#page #wrapper #cryptonote-tf table td  .icon {
+	display:inline-block;
+	vertical-align:top;
+	margin-right:5%;
+	width:6.2em;
+	height:7.3em;
+	background:url(../img/icons.png) no-repeat;
+}
+
+#page #wrapper #cryptonote-tf table td  .icon-1 {
+	background-position: 0px 0px;
+}
+
+#page #wrapper #cryptonote-tf table td  .icon-2 {
+	background-position: 0px -90px;
+}
+
+#page #wrapper #cryptonote-tf table td  .icon-3 {
+	background-position: 0px -188px;
+}
+
+#page #wrapper #cryptonote-tf table td  .icon-4 {
+	background-position: 0px -270px;
+}
+
+#page #wrapper #cryptonote-tf table td  .icon-5 {
+	background-position: 0px -352px;
+}
+
+#page #wrapper #cryptonote-tf table td  .icon-6 {
+	background-position: 0px -439px;
+}
+
+#page #wrapper #cryptonote-tf table td  h3 {
+	display:inline-block;
+	vertical-align:top;
+	font-size:2.83em;
+	line-height:1.2em;
+	font-family: 'Dosis', sans-serif;
+	font-weight:300;
+}
+
+#page #wrapper #cryptonote-tf table td  p {
+	font-size:1.2em;
+	font-weight:300;
+	margin-top:5%;
+	line-height:1.7em;
+}
+
+#page #wrapper #cryptonote-tf table td  .link {
+	display:inline-block;
+	font-size:1em;
+	text-transform:uppercase;
+	color:#ff5614;
+	font-weight:800;
+	letter-spacing:0.2em;
+	margin-top:2%;
+}
+
+#page #wrapper #cryptonote-tf table td  .link:hover {
+	color:#eb8871;;
+}
+
+#page #wrapper #cryptonote-team {
+	padding:4em 0;
+	text-align:center;
+	background:url(../img/cr-bg.png)no-repeat center center;
+	background-size:cover;
+}	
+
+#page #wrapper #cryptonote-team h2 {
+	font-size:4.5em;
+}
+
+#page #wrapper #cryptonote-team  .team-wrapper  {
+	text-align:justify;
+	margin:7% 0 0 0;
+}
+
+#page #wrapper #cryptonote-team  .team-wrapper .stretch {
+	width:100%;
+	display:inline-block;
+}
+
+#page #wrapper #cryptonote-team  .team-wrapper .team-item {
+	display:inline-block;
+	text-align:center;
+	vertical-align:top;
+}
+
+#page #wrapper #cryptonote-team  .team-wrapper .team-item h6 {
+	font-family: 'Dosis', sans-serif;
+	font-size:1.8em;
+	font-weight:600;
+	line-height:1.4em;
+}
+
+#page #wrapper #cryptonote-team  .team-wrapper .team-item h6 + p {
+	font-size:1.2em;
+	color:#ff5614;
+	margin-top:1.5em;
+}
+
+#page #wrapper #cryptonote-team  .team-wrapper  + p {
+	margin-top:2.5%;
+	font-size:1.3em;
+	line-height:1.6em;
+	margin-bottom:3%;
+    font-weight: 300;
+}
+
+#page #wrapper #join-our-community {
+	text-align:center;
+	padding:3.33em 0;
+}
+
+body.inside #page #wrapper #join-our-community {
+	padding:0;
+	position:relative;
+	z-index:10;
+}
+
+#page #wrapper #join-our-community .com-wrap{
+	text-align:justify;
+	margin:4% 0;
+}
+
+#page #wrapper #join-our-community .com-wrap .com-item {
+	display:inline-block;
+	text-align:center;
+	width:210px;
+	vertical-align:top;
+}
+
+#page #wrapper #join-our-community .com-wrap .com-item  h6 {
+	display:inline-block;
+	font-family: 'Dosis', sans-serif;
+	font-size:1.8em;
+	font-weight:600;
+	line-height:1.4em;	
+	border-bottom:0.1em solid #d4d4d4;
+	margin-bottom:20px;
+}
+
+#page #wrapper #join-our-community .com-wrap .com-item a img {
+	margin-bottom:5%;
+}
+
+/*#page #wrapper #join-our-community .com-wrap .com-item  a*/
+.block-link {
+	display:block;
+	margin:0 auto 10px auto;
+	padding:10px 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /*Firefox 1-3*/
+    -webkit-box-sizing: border-box; /* Safari */	
+	border:1px solid transparent;
+}
+
+
+/*#page #wrapper #join-our-community .com-wrap .com-item a:hover*/ 
+.block-link:hover {
+	border:1px solid #e7e7e7;
+}
+
+/*#page #wrapper #join-our-community .com-wrap .com-item a:hover  h6*/
+.block-link:hover h6{
+	color:#ff5614;
+}
+
+.block-link h2{
+	font-size: 26px !important;
+}
+
+.block-link:hover h2{
+	color:#ff5614;
+}
+
+#page #wrapper #join-our-community .com-wrap .com-item  p {
+	font-size:1.35em;
+	line-height:1.6em;
+    font-weight: 300;
+}
+#page #wrapper #join-our-community .com-wrap .stretch {
+	display:inline-block;
+	width:100%;
+}
+
+#page #footer .container {
+	padding:2.5em 0;
+	border-top:0.1em solid #e0e0e0;
+}
+
+#page #footer p{
+	font-size:1.2em;
+	font-weight:300;
+}
+
+#page #footer p .link, .link {
+	color:#eb8871;
+}
+
+#page #footer #copy {
+	font-size:1em;
+	color:#8b8b8b;
+}
+
+#page #footer .link:hover, .link:hover {
+	color:#ff5614;
+}
+
+#page #footer .twit {
+    position: relative;
+    padding-left:31px;
+}
+
+#page #footer #twitter-wrap {
+    margin-right:20px;
+}
+
+#page #footer .twit:after {
+    content:'';
+    position: absolute;
+    top:50%;
+    margin-top:-8px;
+    left:5px;
+    display:block;
+    width:21px;
+    height:16px;
+    background:url(../img/twit.png) no-repeat center center;
+}
+/* PAGE INSIDE */
+
+
+body.inside #page #wrapper #header {
+	position:relative;
+	min-height: 49px;
+}
+
+body.inside #page #wrapper .block-container {
+	padding:40px 0 0 0;
+}
+
+body.inside #page #wrapper .block-container .pull-left {
+	width:75%;
+}
+
+body.inside #page #wrapper .block-container h3, body.inside #page #wrapper .block-container h2 {
+	font-size:34px;
+	font-family: 'Dosis', sans-serif;
+	font-weight:300;
+}
+
+body.inside #page #wrapper .block-container h3 + p, body.inside #page #wrapper .block-container h2 + p {
+	margin-top:3%;
+}
+
+body.inside #page #wrapper .block-container p {
+	font-size:16px;
+	line-height:24px;
+    font-weight:300;
+}
+
+body.inside #page #wrapper .block-container:not(#join-our-community) p:last-of-type {
+	margin-top:5%;
+	font-size:14px;
+	color:#8b8b8b;
+	padding-bottom:30px;
+	border-bottom:1px solid #e0e0e0;
+}
+
+body.inside #page #wrapper .block-container p + p {
+	margin-top:1.5%;
+}
+
+body.inside #page #wrapper .fixed-menu-container {
+	width:100%;
+	padding-top:40px;
+	position:fixed;
+	top:99px;
+	left:0;
+	z-index:100;
+	background:transparent;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right {
+	position:absolute;
+	z-index:1000;
+	right:0;
+	width:195px;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li {
+	padding:8px 0;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a {
+	display:block;
+	font-size:14px;
+	line-height:20px;
+	font-weight: 300;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a:hover h6,
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li.active a h6{
+	color:#ff5614;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a .icon {
+	display:inline-block;
+	margin-right:10px;
+	vertical-align:middle;
+	width:34px;
+	height:44px;
+	background:url(../img/icons-mini.png);
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a .icon-1 {
+	/*background-position: 0px 0px;*/
+	background:url(../img/icon-1-mini.png) no-repeat;
+	background-position: center center;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a .icon-2 {
+	/*background-position: 0px -50px;*/
+	background:url(../img/icon-2-mini.png) no-repeat;
+	background-position: center center;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a .icon-3 {
+	/*background-position: 0px -104px;*/
+	background:url(../img/icon-3-mini.png) no-repeat;
+	background-position: center center;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a .icon-4 {
+	/*background-position: 0px -154px;*/
+	background:url(../img/icon-4-mini.png) no-repeat;
+	background-position: center center;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a .icon-5 {
+	/*background-position: 0px -199px;*/
+	background:url(../img/icon-5-mini.png) no-repeat;
+	background-position: center center;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a .icon-6 {
+	/*background-position: 0px -241px;*/
+	background:url(../img/icon-6-mini.png) no-repeat;
+	background-position: center center;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a .icon-7 {
+	/*background-position: 0px -295px;*/
+	background:url(../img/icon-7-mini.png) no-repeat;
+	background-position: center center;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a .icon-8 {
+	background:url(../img/icon-8-mini.png) no-repeat;
+	background-position: center center;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a .icon-9 {
+	background:url(../img/icon-9-mini.png) no-repeat;
+	background-position: center center;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li a h6 {
+	display:inline-block;
+	vertical-align:middle;
+	font-weight:300;
+}
+
+body.inside #page #wrapper .fixed-menu-container .fixed-menu-right li  + li {
+	border-top:1px solid #dadada;
+}
+body.inside #page #wrapper #join-our-community .com-wrap .com-item {
+	width:220px;
+}
+
+.article-title {
+	font-family: 'Dosis', sans-serif;
+	font-size:1.4em;
+	font-weight: normal;
+	line-height:1.4em;
+	color: #8b8b8b;
+	text-align: center;
+	margin: 0 0 60px 0;
+}
+
+.grey-color {
+	color: #8b8b8b;
+}
+
+.blue-color {
+	color: #25aae1;
+}
+
+
+#coins h2.main-header {
+	text-align:center;
+	font-size: 34px;
+}
+
+#coins .blocks {
+	margin-top:40px;
+}
+
+#coins .blocks .block {
+	position:relative;
+	margin-top:20px;
+}
+
+#coins .blocks .block:after {
+	content:'';
+	position:absolute;
+	width:53px;
+	height:53px;
+	top:50%;
+	margin-top:-53px;
+	left:100px;
+}
+
+#coins .blocks #bytecoin:after {
+	background:url(../img/coin-bcn.png) no-repeat center center;
+}
+
+#coins .blocks #bitmonero:after {
+	background:url(../img/coin-bmr.png) no-repeat center center;
+}
+#coins .blocks #fantomcoin:after {
+	background:url(../img/coin-fcn.png) no-repeat center center;
+}
+#coins .blocks #quazarcoin:after {
+	background:url(../img/coin-qcn.png) no-repeat center center;
+}
+#coins .blocks #ducknote:after {
+	background:url(../img/coin-duck.png) no-repeat center center;
+}
+#coins .blocks #boolberry:after {
+	background:url(../img/coin-bbr.png) no-repeat center center;
+}
+#coins .blocks #aeon:after {
+	background:url(../img/coin-aeon.png) no-repeat center center;
+}
+#coins .blocks #dashcoin:after {
+	background:url(../img/coin-dsh.png) no-repeat center center;
+}
+#coins .blocks #dosh:after {
+	background:url(../img/coin-dosh.png) no-repeat center center;
+}
+#coins .blocks #cryptonotecoin:after {
+	background:url(../img/coin-cryptonotecoin.png) no-repeat center center;
+}
+#coins .blocks #infinium-8:after {
+	background:url(../img/coin-inf8.png) no-repeat center center;
+}
+#coins .blocks #darknetcoin:after {
+	background:url(../img/coin-dnc.png) no-repeat center center;
+}
+#coins .blocks #pebblecoin:after {
+	background:url(../img/coin-xpb.png) no-repeat center center;
+}
+
+
+#coins .blocks .block h2 {
+	padding-left:250px;
+	width: 670px;	
+	font-size:26px !important;
+}
+
+#coins .blocks .block p {
+	padding-left:250px;
+	width: 670px;	
+	font-size:16px !important;
+	line-height:24px;
+	color: #000000 !important;
+}
+
+#coins .blocks .block p {
+	margin-top:20px !important;
+}
+
+#coins .blocks .block .links {
+	margin-top:20px;
+	display:block;
+}
+
+#coins .blocks .block .links a {
+	font-size:12px;
+	line-height:24px;
+	text-transform:uppercase;
+	color:#eb8871;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+
+#coins .blocks .block .links a:hover {
+	color: #ff5614;
+}
+
+#news h3.header {
+	border-bottom:1px solid #e0e0e0;
+	text-align: center;
+
+}
+#news h3 {
+	font-size: 34px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 300;
+	padding:40px 0;
+
+}
+#news .news-container .date {
+	color:#c3c3c3;
+}
+
+#news .news-container .date + p {
+	margin-top:20px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+#news #all-news {
+	margin:0 auto;
+}
+
+#news #all-news .news-container + .news-container {
+	border-top: 0.1em solid #e0e0e0;
+}
+
+#news #all-news .news-container .wrapper {
+	width:70%;
+	margin:0 auto;
+}
+
+#news #all-news .news-container p + .comments {
+	color:#ff5614;
+	display:inline-block;
+	margin:10px 0 50px 0;
+}
+
+#news #all-news .news-container p > img.pull-left {
+	margin-right:15px;
+}
+#news #all-news .news-container p > img.pull-right {
+	margin-left:15px;
+}
+
+#news #all-news .news-container p + .comments  i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	width:16px;
+	height:14px;
+	background:url(/img/comment.png) no-repeat center center;
+}
+#news a:hover {
+ text-decoration:underline;
+}
+
+#standards .container {
+    width:750px;
+}
+
+#standards .main-header {
+    text-align: center;
+}
+
+#standards h3 + p {
+    border-bottom:none !important;
+}
+
+#standards table {
+    width:100%;
+    font-weight: 300;
+}
+
+#standards table th {
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    padding:10px 0;
+    border-bottom:1px solid #e0e0e0;
+}
+
+#standards table td {
+    padding:10px 0;
+    text-align: center;
+    border-bottom:1px solid #e0e0e0;
+    font-size: 16px;
+}
+
+#standards table td .link {
+    text-decoration: underline;
+}
+
+
+html,body {
+    height:100%;
+}
+
+#page {
+    height:100%;
+}
+
+#wrapper {
+    min-height: 100%;
+    padding-bottom:75px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#footer {
+    margin-top:-75px;
+}
+
+#other-cryptonotes .container {
+	border-bottom: 1px solid #e0e0e0;
+	padding: 20px 0;
+}
+
+#other-cryptonotes table {
+	width: 100%;
+}
+
+#other-cryptonotes table td {
+	width: 25%;
+	text-align: center;
+}
+
+#other-cryptonotes table td a {
+	display: block;
+	min-height: 195px;
+	padding: 30px 0;
+}
+
+#other-cryptonotes table td a > img,
+#other-cryptonotes table td a >	h3 {
+	margin-top: 15px;
+}
+
+#other-cryptonotes h3 {
+	margin-bottom:20px;
+}
+
+#other-cryptonotes img {
+	margin-bottom: 20px;
+}
+
+#other-cryptonotes td:hover a; 
+{
+	color:#ff0000;
+}
+
+#standards p{
+	font-weight: :300;
+}

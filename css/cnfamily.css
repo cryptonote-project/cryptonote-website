@@ -1,0 +1,120 @@
+#under-header {
+    height:50px;
+    font-family: 'Open sans', sans-serif;
+    font-size:12px;
+    font-weight: 400;
+    background:#fff;
+}
+
+#under-header .common-logo-place a {
+    display:block;
+    padding:13px 0;
+    color:rgba(0,0,0,0.7);
+}
+
+#under-header .common-logo-place a:hover {
+    color:#2d7ce8;
+}
+
+#under-header .common-logo-place a:hover > i {
+    background:url(/img/common/cn_blue.png) no-repeat center center;
+}
+
+#under-header .common-logo-place a > i {
+    content:'';
+    display:inline-block;
+    vertical-align: middle;
+    margin-right:10px;
+    width:21px;
+    height:24px;
+    background:url(/img/common/cn.png) no-repeat center center;
+}
+
+#under-header .common-menu ul > li {
+    display:inline-block;
+    line-height:50px;
+    padding:0 20px;
+}
+
+#under-header .common-menu ul > li > a {
+    display:block;
+    color:rgba(0,0,0,0.7);
+}
+
+#under-header a.active {
+    color:#2d7ce8;
+}
+
+#under-header a.active > i {
+    background:url(/img/common/cn_blue.png) no-repeat center center;
+}
+
+#under-header .common-menu ul > li > a:hover {
+    color:#2d7ce8;
+}
+
+#under-header .common-menu ul > li > a > i {
+    display:inline-block;
+    vertical-align: middle;
+    width:33px;
+    height:32px;
+    background:url(/img/common/all.png) no-repeat;
+    margin-right:5px;
+}
+
+#under-header .common-menu ul > li > a > i.starter {
+    background-position:0 0;
+}
+
+#under-header .common-menu ul > li > a:hover > i.starter {
+    background-position: 0px -40px;
+}
+
+#under-header .common-menu ul > li > a > i.coin {
+    background-position: 0px -80px;
+}
+
+#under-header .common-menu ul > li > a:hover > i.coin {
+    background-position: 0px -122px;
+}
+
+#under-header .common-menu ul > li > a > i.foundation {
+    background-position: 15px -160px;
+}
+
+#under-header .common-menu ul > li > a:hover > i.foundation{
+    background-position: 15px -195px;
+}
+
+#under-header .common-menu ul > li > a > i.forum {
+    background-position: 7px -228px;
+}
+
+#under-header .common-menu ul > li > a:hover > i.forum {
+    background-position: 7px -260px;
+}
+
+.wrapper {
+    width:1170px;
+    margin:0 auto;
+    padding:0 15px;
+}
+
+.pull-left {
+    float:left;
+}
+
+.pull-right {
+    float:right;
+}
+.clearfix:after,
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}

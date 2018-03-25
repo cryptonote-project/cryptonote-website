@@ -1,0 +1,390 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CryptoNote Technology</title>
+	<meta name="description" content="Learn how CryptoNote's ring signatures, one-time addresses, and egalitarian proof of work helps create totally anonymous cryptocurrency" />
+	<meta name="keywords" content="CryptoNote, alternative, currency, anonymous, payments, open-source, technology, cryptography" />
+	<link rel="canonical" href="https://myntnote.org/">
+	<link rel="image_src" href="/img/cn-logo.png" />
+	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href='https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/cnfamily.css">
+</head>
+<body class="inside">
+	<div id="page">
+		<div id="wrapper">
+        <div id="under-header">
+            <div class="container">
+                <div class="pull-left common-logo-place">
+                    <a href="https://cryptonote.org/" class="active"><i></i>CryptoNote Technology</a>
+                </div>
+                <div class="common-menu clearfix">
+                    <ul class="pull-right">
+                        <li><a href="https://cryptonotestarter.org/" target="_blank"><i class="starter"></i>CryptoNote Starter</a></li>
+                        <li><a href="http://cryptonote-coin.org/" target="_blank"><i class="coin"></i>CryptoNoteCoin</a></li>
+                        <li><a href="https://cryptonotefoundation.org/" target="_blank"><i class="foundation"></i>CryptoNote Foundation</a></li>
+                        <li><a href="https://forum.cryptonote.org/" target="_blank"><i class="forum"></i>Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+			<div id="header">
+				<div class="container">
+					<div class="pull-left">
+						<!--a href="/" id="logo"><span class="logo"></span></a-->
+					</div>
+					<ul class="nav clearfix">
+						<li style="display:none">
+							<a href="#" data-scroll-id="cryptonote-tf">features</a>
+						</li>
+						<li style="display:none">
+							<a href="#" data-scroll-id="cryptonote-team">team</a>
+						</li>
+						<li style="display:none">
+							<a href="/home" data-scroll-id="join-our-community">community</a>
+						</li>
+						<li id="coins">
+	                        <a href="/coins.html"><i class="coins-ico"></i>coins</a>
+	                    </li>
+	                    <li id="news">
+	                        <a href="/home><i class="news-ico"></i>news</a>
+	                    </li>
+	                    <li id="standard">
+	                        <a href="/standards.html"><i class="standard-ico"></i>standards</a>
+	                    </li>
+	                    <li id="tech" class="active">
+	                        <a href="/cryptonote.html"><i class="tech-ico"></i>technology</a>
+	                    </li>
+    
+					 </ul>
+				</div>
+			</div>
+			<div class="block-container" id="phylosophy">
+				<div class="container">
+					<div class="pull-left">
+						<h2>CryptoNote Phylosophy</h2>
+						<p>CryptoNote is the technology that allows the creation of completely anonymous egalitarian cryptocurrencies. A number of our community members have been focused on research and development for more than a decade. We aim to promote the derived principles to influence the contemporary economic paradigm.</p>
+						<p>The current power distribution on our planet is the legacy of the world where the economy is controlled by the few. The status quo was shaped throughout centuries, making human beings engage in rat races, detrimental rivalry, and bloodshed. In spite of humanity's hope to overcome local crises through education and internationalization, we still fail to have full control over our lives. </p>
+						<p>However, state-of-the-art advancements in technology, mathematics, and cryptography may become the key to subvert this paradigm. The advent of cryptocurrencies is the first sign that the new world is coming. It is marked with a hope that the economy will interlace with the technology, that communities will set new transparent principles, and impartial cryptographic algorithms will control its implementation.</p>
+						<p>It is in our philosophy to encourage enlightenment through breakthrough innovations. Emancipation begins with laymen getting access to financial resources that will give the oppressed the hope for quality education, drinking water, and a better life. CryptoNote is not about creating yet another digital currency. It is the mindset and concepts that represent the first small step to regain the power over ourselves in order to live peacefully and prosper.</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="block-container" id="untraceable-payments">
+				<div class="container">
+					<div class="pull-left">
+						<h2>Ring signatures: Untraceable payments</h2>
+						<p>The ordinary digital signature (e.g. (EC)DSA, Schnorr, etc...) verification process  involves the public key of the signer. It is a necessary condition, because the signature actually proves that the author possesses the corresponding secret key. But it is not always a sufficient condition. </p>
+						
+						<img src="/img/cn01.png" class="article-image" width="855" height="201" alt="Ordinary signature" title="Ordinary signature" />
+						<h6 class="article-title">Ordinary signature</h6>
+
+						<p><b>Ring signature</b> [1] is a more sophisticated scheme, which in fact may demand several different public keys for verification. In the case of ring signature, we have a group of individuals, each with their own secret and public key. The statement proved by ring signatures is that the signer of a given message is a member of the group. The main distinction with the ordinary digital signature schemes is that the signer needs a single secret key, but a verifier cannot establish the exact identity of the signer. Therefore, if you encounter a ring signature with the public keys of Alice, Bob and Carol, you can only claim that one of these individuals was the signer but you will not be able to pinpoint him or her.						</p>
+						
+						<img src="/img/cn02.png" class="article-image" width="856" height="241" alt="Ring signature" title="Ring signature" />
+						<h6 class="article-title">Ring signature</h6>
+
+						<p>This concept can be used to make digital transactions sent to the network untraceable by using the public keys of other members in the ring signature one will apply to the transaction. This approach proves that the creator of the transaction is eligible to spend the amount specified in the transaction but his identity will be indistinguishable from the users whose public keys he used in his ring signatures.</p>
+						
+						<img src="/img/cn03.png" class="article-image" width="856" height="271" alt="Untraceable transactions" title="Untraceable transactions" />
+						<h6 class="article-title">Untraceable transactions</h6>
+
+						<p>It should be noted that foreign transactions do not restrict you from spending your own money. Your public key may appear in dozens of others' ring signatures but only as a muddling factor (even if you already used the corresponding secret key for signing your own transaction). Moreover, if two users create ring signatures with the same set of public keys, the signatures will be different (unless they use the same private key).</p>
+						
+						<p>[1] Ronald L. Rivest, Adi Shamir, and Yael Tauman. How to leak a secret. In ASIACRYPT, pages 552–565, 2001</p>
+					</div>
+				</div>
+			</div>
+			<div class="block-container" id="unlinkable-transaction">
+				<div class="container">
+					<div class="pull-left">
+						<h2>One-time keys: Unlinkable transactions</h2>
+						<p>Normally, when you post your public address, anyone can check all your incoming transactions even if they are hidden behind a ring signature. To avoid linking you can create hundreds of keys and send them to your payers privately, but that deprives you of the convenience of having a single public address.</p>
+						
+						<img src="/img/cn06.png" class="article-image" width="855" height="207" alt="Linkable transactions" title="Linkable transactions" />
+						<h6 class="article-title">Linkable transactions</h6>
+
+						<p>CryptoNote solves this dilemma by an automatic creation of multiple unique one-time keys, derived from the single public key, for each p2p payment. The solution lies in a clever modification of the <b>Diffie-Hellman exchange protocol</b> [1]. Originally it allows two parties to produce a common secret key derived from their public keys. In our version the sender uses the receiver's public address and his own random data to compute a one-time key for the payment.</p>
+						<p>The sender can produce only the public part of the key, whereas only the receiver can compute the private part; hence the receiver is the only one who can release the funds after the transaction is committed. He only needs to perform a single-formula check on each transactions to establish if it belongs to him. This process involves his private key, therefore no third party can perform this check and discover the link between the one-time key generated by the sender and the receiver's unique public address.</p>
+						
+						<img src="/img/cn07.png" class="article-image" width="855" height="302" alt="Unlinkable transactions" title="Unlinkable transactions" />
+						<h6 class="article-title">Unlinkable transactions</h6>
+
+						<p>An important part of our protocol is usage of random data by the sender. It always results in a different one-time key even if the sender and the receiver both remain the same for all transactions (that is why the key is called "one-time"). Moreover, even if they are both the same person, all the one-time keys will also be absolutely unique.</p>
+						
+						<p>[1] Whitfield Diffie and Martin Hellman. New directions in cryptography. IEEE Transactions on Information Theory 22 (6): 644–654, 1976.</p>
+					</div>
+				</div>
+			</div>
+			<div class="block-container" id="double-spend-proof">
+				<div class="container">
+					<div class="pull-left">
+						<h2>Double-spending proof</h2>
+						<p>Fully anonymous signatures would allow spending the same funds many times which, of course, is incompatible with any payment system's principles. The problem can be fixed as follows.</p>
+						<p>A ring signature is actually a class of crypto-algorithms with different features. The one CryptoNote uses is the modified version of the "<b>Traceable ring signature</b>" [1]. In fact we transformed traceability into linkability. This property restricts a signer's anonymity as follows: if he creates more than one ring signature using the same private key (the set of foreign public keys is irrelevant), these signatures will be linked together which indicates a double-spending attempt.</p>
+						<p>To support linkability CryptoNote introduced a special marker being created by a user while signing, which we called a <b>key image</b>. It is the value of a cryptographic one-way function of the secret key, so in math terms it is actually an image of this key. One-wayness means that given only the key image it is impossible to recover the private key. On the other hand, it is computationally impossible to find a collision (two different private keys, which have the same image). Using any formula, except for the specified one, will result in an unverifiable signature. All things considered, the key image is unavoidable, unambiguous and yet an anonymous marker of the private key.</p>
+						
+						<img src="/img/cn04.png" class="article-image" width="855" height="270" alt="Key image via one-way function" title="Key image via one-way function" />
+						<h6 class="article-title">Key image via one-way function</h6>
+
+						<p>All users keep the list of the used key images (compared with the history of all valid transactions it requires an insignificant amount of storage) and immediately reject any new ring signature with a duplicate key image. It will not identify the misbehaving user, but it does prevent any double-spending attempts, caused by malicious intentions or software errors.</p>
+						
+						<img src="/img/cn05.png" class="article-image" width="855" height="213" alt="Double-spending check" title="Double-spending check" />
+						<h6 class="article-title">Double-spending check</h6>
+
+						<p>[1] Eiichiro Fujisaki and Koutarou Suzuki. Traceable ring signature. In Public Key Cryptography, pages 181–200, 2007.</p>
+					</div>
+				</div>
+			</div>	
+			<div class="block-container" id="blockchain-analysis-resistance">
+				<div class="container">
+					<div class="pull-left">
+						<h2>CryptoNote blockchain analysis resistance</h2>
+						<p>There are many academic papers dedicated to the analysis of the Bitcoin's blockchain. Their authors trace the money flow, identify the owners of coins, determine wallet balances and so on. The ability to make such analysis is due to the fact that all the transfers between addresses are transparent: every input in a transaction refers to a unique output. Moreover, users often re-use their old addresses, receiving and sending coins from them many times, which simplifies the analyst's work. It happens unintentionally: if you have a public address (for example, for donations), you are sure to use this address in many inputs and transactions.</p>
+						<p>CryptoNote is designed to mitigate the risks associated with key re-usage and one-input-to-one-output tracing. Every address for a payment is a unique one-time key, derived from both the sender's and the recipient's data. It can appear twice with a probability of a 256-bit hash collision. As soon as you use a ring signature in your input, it entails the uncertainty: which output has just been spent?</p>
+						<p>Trying to draw a graph with addresses in the vertices and transactions on the edges, one will get a tree: a graph without any cycles (because no key/address was used twice). Moreover, there are billions of possible graphs, since every ring signature produces ambiguity. Thus, you can't be certain from which possible sender the transaction-edge comes to the address-vertice. Depending on the size of the ring you will guess from "one out of two" to "one out of a thousand". Every next transaction increases the entropy and creates additional obstacles for an analyst.</p>
+
+						<img src="/img/cn10.gif" class="article-image" width="800" height="300" alt="Blockchain analysis ambiguity" title="Blockchain analysis ambiguity" />
+						<h6 class="article-title">Blockchain analysis ambiguity</h6>
+						<p>
+						
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-container" id="standard-transaction">
+				<div class="container">
+					<div class="pull-left">
+						<h2>Standard CryptoNote transaction</h2>
+
+						<p>A standard CryptoNote transaction is generated by the following sequence covered in the white paper.</p>
+						<p>Bob decides to spend an output, which was sent to the one-time public key. He needs Extra <span class="blue-color">(1)</span>, TxOutNumber <span class="blue-color">(2)</span>, and his Account private key <span class="blue-color">(3)</span> to recover his one-time private key <span class="blue-color">(4)</span>.</p>
+						<p>When sending a transaction to Carol, Bob generates its Extra value by random <span class="blue-color">(5)</span>. He uses Extra <span class="blue-color">(6)</span>, TxOutNumber <span class="blue-color">(7)</span> and Carol's Account public key <span class="blue-color">(8)</span> to get her Output public key <span class="blue-color">(9)</span>.</p>
+						<p>In the input Bob hides the link to his output among the foreign keys <span class="blue-color">(10)</span>. To prevent double-spending he also packs the Key image, derived from his One-time private key <span class="blue-color">(11)</span>.</p>
+						<p>Finally, Bob signs the transaction, using his One-time private key <span class="blue-color">(12)</span>, all the public keys <span class="blue-color">(13)</span> and Key Image <span class="blue-color">(14)</span>. He appends the resulting Ring Signature to the end of the transaction <span class="blue-color">(15)</span>.</p>
+						<a href="/img/cryptonote_transaction.png" target="_blank"><img src="/img/cryptonote_transaction.png" class="article-image" width="900" height="428" alt="Standard CryptoNote transaction" title="Standard CryptoNote transaction" /></a>
+						<h6 class="article-title">A standard CryptoNote transaction (click to enlarge)</h6>
+						<p>
+						
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="block-container" id="adaptive-limits">
+				<div class="container">
+					<div class="pull-left">
+						<h2>Adaptive limits</h2>
+						<p>A decentralized payment system must not depend on a single person's decisions, even if this person is a core developer. Hard constants and magic numbers in the code deter the system's evolution and therefore should be eliminated (or at least be cut down to the minimum). Every crucial limit (like max block size or min fee amount) should be re-calculated based on the system's previous state. Therefore, it always changes adaptively and independently, allowing the network to develop on it's own.</p>
+						<p>CryptoNote has the following parameters which adjust automatically for each new block:</p>
+						<p>1) Difficulty. The general idea of our algorithm is to sum all the work that nodes have performed during the last 720 blocks and divide it by the time they have spent to accomplish it. The measure of the work is the corresponding difficulty value for each of the blocks. The time is calculated as follows: sort all the 720 timestamps and cut-off 20% of the outliers. The range of the rest 600 values is the time which was spent for 80% of the corresponding blocks.</p>
+						<p>2) Max block size. Let MN be the median value of the last N blocks sizes. Then the "hard-limit" for the size of accepting blocks is 2*MN. It averts blockchain bloating but still allows the limit to slowly grow with the time if necessary. Transaction size does not need to be limited explicitly. It is bounded by the size of the block.</p>
+						<p>
+						
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div class="block-container" id="smooth-emission">
+				<div class="container">
+					<div class="pull-left">
+						<h2>Smooth emission</h2>
+						<p>The upper bound for the overall amount of all digital coins is also digital:</p>
+						<p align="center"><i>MSupply = 2<sup>64</sup> − 1 atomic units</i></p>
+						<p>This is a natural restriction based only on the implementation limits, not on intuition like "N coins ought to be enough for everybody". To make the emission process smoother CryptoNote uses the following formula for block rewards: </p>
+						<p align="center"><i>BaseReward = (MSupply − A) >> 18</i></p>
+						<p>where A is amount of previously generated coins. It gives a predictable growth of the money supply without any breakpoints.</p>
+						<p>
+						
+						</p>
+					</div>
+				</div>
+			</div>		
+			<div class="block-container" id="equal-proof-of-work">
+				<div class="container">
+					<div class="pull-left">
+						<h2>Egalitarian proof of work</h2>
+						<p>The proof of work mechanism is actually a voting system. Users vote for the right order of the transactions, for enabling new features in the protocol and for the honest money supply distribution. Therefore, it is important that during the voting process all participant have equal voting rights. CryptoNote brings the equality with an egalitarian proof-of-work pricing function, which is perfectly suitable for ordinary PCs. It utilizes built-in CPU instructions, which are very hard and too expensive to implement in special purpose devices or fast memory-on-chip devices with low latency.</p>
+						<p>We propose a new memory-bound algorithm for the proof-of-work pricing function. It relies on random access to a slow memory and emphasizes latency dependence. As opposed to scrypt, every new block (64 bytes in length) depends on all the previous blocks. As a result a hypothetical "memory-saver" should increase his calculation speed exponentially.
+						<p>Our algorithm requires about 2 Mb per instance for the following reasons:</p>
+						<p>1. It fits in the L3 cache (per core) of modern processors, which should become mainstream in a few years;</p>
+						<p>2. A megabyte of internal memory is an almost unacceptable size for a modern ASIC pipeline;</p>
+						<p>3. GPUs may run hundreds of concurrent instances, but they are limited in other ways: GDDR5 memory is slower than the CPU L3 cache and remarkable for its bandwidth, not random access speed.</p>
+						<p>4. Significant expansion of the scratchpad would require an increase in iterations, which in turn implies an overall time increase. &quot;Heavy" calls in a trust-less p2p network may lead to serious vulnerabilities, because nodes are obliged to check every new block's proof-of-work. If a node spends a considerable amount of time on each hash evaluation, it can be easily DDoSed by a flood of fake objects with arbitrary work data (nonce values).</p>
+						<p>One of the proof-of-work algorithms that is in line with our propositions is <a href="https://en.bitcoin.it/wiki/CryptoNight" target="_blank" class="link">CryptoNight</a>, created by Bytecoin developers in a cooperation with our team. It is designed to make CPU and GPU mining roughly equally efficient and restrict ASIC mining.</p>
+						<p>
+						
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="block-container" id="join-our-community">
+				<div class="container">
+					<div class="pull-left">
+						<div class="com-wrap">
+							<div class="com-item">
+								<a href="https://forum.cryptonote.org" class="block-link" target="_blank" id="forum-link">
+									<h6>
+										Forum
+									</h6>
+									<br>
+									<img src="/img/img1.png">
+								</a>
+							
+								<p>
+									Technical and other discussions
+									about CryptoNote technology
+								</p>
+							</div>
+							<div class="com-item">
+								<a href="/whitepaper.pdf"  class="block-link" target="_blank" id="/whitepaper-link">
+									<h6>
+										White paper
+									</h6>
+									<br>
+									<img src="/img/img2.png">
+								</a>
+								
+								<p>
+									White paper, which covers
+									all aspects of CryptoNote technology
+									<br/><a href="/nvsaberhagen.asc" class="link" download>pgp key</a> <span class="grey-color">|</span> <a href="/whitepaper.pdf.asc" class="link" download>signature</a><br/>
+								</p>
+							</div>
+						<div class="com-item">
+							<a href="https://github.com/cryptonotefoundation/cryptonote" class="block-link"  target="_blank">
+								<h6>
+									Source Code
+								</h6>
+								<br>
+								<img src="/img/img-github.png">
+							</a>
+							<p>
+								Browse and fork CryptoNote 
+								source code
+							</p>
+						</div>
+							<div class="stretch"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fixed-menu-container">
+				<div class="container">
+					<ul class="fixed-menu-right">
+						<li>
+							<a href="#phylosophy">
+								<span class="icon icon-8"></span>
+								<h6>
+									CryptoNote
+									<br/>phylosophy
+								</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#untraceable-payments">
+								<span class="icon icon-1"></span>
+								<h6>
+									Untraceable
+									<br/>payments
+								</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#unlinkable-transaction">
+								<span class="icon icon-2"></span>
+								<h6>
+									Unlinkable
+									<br/>transactions
+								</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#double-spend-proof">
+								<span class="icon icon-3"></span>
+								<h6>
+									Double-spending
+									<br/>proof
+								</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#blockchain-analysis-resistance">
+								<span class="icon icon-4"></span>
+								<h6>
+									Blockain
+									analysis<br>
+									resistance
+								</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#standard-transaction">
+								<span class="icon icon-9"></span>
+								<h6>
+									Standard <br>
+									transaction
+								</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#adaptive-limits">
+								<span class="icon icon-6"></span>
+								<h6>
+									Adaptive
+									<br/>limits
+								</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#smooth-emission">
+								<span class="icon icon-7"></span>
+								<h6>
+									Smooth
+									<br/>emission
+								</h6>
+							</a>
+						</li>	
+						<li>
+							<a href="#equal-proof-of-work">
+								<span class="icon icon-5" ></span>
+								<h6>
+									Egalitarian <br/>
+									proof of work
+								</h6>
+							</a>
+						</li>						
+					</ul>	
+				</div>
+			</div>
+				
+			
+		</div>
+		<div id="footer">
+			<div class="container">
+                <div class="pull-left" id="twitter-wrap">
+                    <p>Follow us: <a href="https://twitter.com/CryptoNoteTech" target="_blank" class="twit link">CryptoNoteTech</a></p>
+                </div>
+				<div class="pull-left">
+					<p>Contact us: <span class="mail">contact at cryptonote dot org</span></p>
+				</div>
+				<div class="pull-right" id="copy">
+					<p>2011–2015 CryptoNote</p>
+				</div>
+				<div class="pull-right" id="copy" style="margin-right:20px;">
+					<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a></p>
+				</div>
+			</div>
+		</div>	
+	</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+</body>
+</html>
