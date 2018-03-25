@@ -1,0 +1,11 @@
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = "GENESIS_TX:Add this line into your coin configuration file as is:XGENESIS_COINBASE_TX_HEXXXX012801ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101978e39e74f3c87d5151f00da3e8a2b685383299b455308ec59f8d971ed104e30"; 
+    var res = str.slice(92, 246);
+    document.getElementById("demo").innerHTML = res;
+}
+</script>
